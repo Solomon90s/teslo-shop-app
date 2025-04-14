@@ -3,6 +3,14 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@auth/*": ["./src/app/teslo-shop/auth/*"],
+      "@dashboard/*": ["./src/app/teslo-shop/admin-dashboard/*"],
+      "@products/*": ["./src/app/teslo-shop/products/*"],
+      "@shared/*": ["./src/app/teslo-shop/shared/*"],
+      "@store-front/*": ["./src/app/teslo-shop/store-front/*"],
+    },
     "outDir": "./dist/out-tsc",
     "strict": true,
     "noImplicitOverride": true,

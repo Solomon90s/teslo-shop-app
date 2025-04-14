@@ -3,8 +3,6 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-product-page',
   imports: [],
-  templateUrl: './product-page.component.html'
+  templateUrl: './product-page.component.html',
 })
-export class ProductPageComponent {
-
-}
+export default class ProductPageComponent {}
