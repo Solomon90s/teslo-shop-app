@@ -5,10 +5,14 @@
     <!-- Slides -->
     @for (image of images(); track $index) {
     <div class="swiper-slide">
-      <img class="w-full object-cover rounded-b-sm" [src]="image | productImage" alt="Producto">
+      <img
+        class="w-full object-cover rounded-b-sm"
+        [src]="image | productImage"
+        alt="Producto"
+      />
     </div>
     }@empty {
-    <h1 class="text-2xl">No hay imágenes</h1>
+    <h1 class="text-2xl">No hay imÃ¡genes</h1>
     }
   </div>
   <!-- If we need pagination -->
