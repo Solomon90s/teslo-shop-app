@@ -5,6 +5,5 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   selector: 'front-navbar',
   imports: [RouterLink, RouterLinkActive],
   templateUrl: './front-navbar.component.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FrontNavbarComponent {}
