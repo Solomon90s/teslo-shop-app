@@ -1,21 +1,23 @@
-@if (productResource.isLoading()) {
-<div class="flex justify-center items-center h-screen">
-  <span class="loading loading-spinner loading-lg"> </span>
-</div>
-}
-<!--Producto-->
-@if (productResource.hasValue()) {
-<div class="grid grid-cols-1 min-h-screen sm:grid-cols-2 gap-3">
-  <!--Imágenes-->
-  <product-carousel [images]="productResource.value()?.images ?? []" />
-  <div>
-    <hgroup>
-      <h2 class="text-2xl font-bold font-montserrat">
-        {{ productResource.value().title }}
-      </h2>
-      <div class="divider"></div>
-      <p>{{ productResource.value().description }}</p>
-    </hgroup>
+<div class="my-10">
+  @if (productResource.isLoading()) {
+  <div class="flex justify-center items-center h-screen">
+    <span class="loading loading-spinner loading-lg"> </span>
   </div>
+  }
+  <!--Producto-->
+  @if (productResource.hasValue()) {
+  <div class="grid grid-cols-1 min-h-screen sm:grid-cols-2 gap-3">
+    <!--Imágenes-->
+    <product-carousel [images]="productResource.value()?.images ?? []" />
+    <div>
+      <hgroup>
+        <h2 class="text-2xl font-bold font-montserrat">
+          {{ productResource.value().title }}
+        </h2>
+        <div class="divider"></div>
+        <p>{{ productResource.value().description }}</p>
+      </hgroup>
+    </div>
+  </div>
+  }
 </div>
-}

@@ -1,4 +1,4 @@
-<div class="card bg-base-100 shadow-xl animate-fadeIn">
+<div class="card bg-base-100 shadow-xl scale-90 hover:scale-95 animate-fadeIn">
   <figure>
     <img
       class="rounded-b-sm rounded-t-sm"
@@ -9,7 +9,7 @@
   <div class="card-body">
     <hgroup>
       <h2
-        class="card-title font-montserrat text-accent text-lg hover:underline cursor-pointer"
+        class="card-title font-montserrat text-blue-400 text-lg hover:underline cursor-pointer"
         [routerLink]="['/product', product().slug]"
       >
         {{ product().title }}
@@ -17,7 +17,7 @@
       <p>{{ product().description | slice : 0 : 70 }}....</p>
     </hgroup>
     <div class="card-actions justify-end">
-      <a class="link link-accent" [routerLink]="['/product', product().slug]"
+      <a class="link text-blue-400" [routerLink]="['/product', product().slug]"
         >Ver producto</a
       >
     </div>

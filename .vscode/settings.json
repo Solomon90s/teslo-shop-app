@@ -4,7 +4,11 @@
             "skipChangeDetectionOnPush": true
         },
         "angular-*": {
-            "externalTemplate": true
+            "externalTemplate": true,
+            "skipStyle": true
+        },
+        "angular-page": {
+            "skipChangeDetectionOnPush": true
         }
     }
 }
