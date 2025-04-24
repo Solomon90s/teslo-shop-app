@@ -9,7 +9,7 @@
 />
 
 <div
-  class="grid grid-cols-1 mb:grid-cols-3 min-h-screen lg:grid-cols-3 xl:grid-cols mt-2 gap-3"
+  class="grid grid-cols-1 md:grid-cols-3 min-h-screen lg:grid-cols-3 xl:grid-cols mt-2 gap-3"
 >
   @for (product of productsResource.value()?.products; track $index) {
   <product-card [product]="product" />

@@ -8,6 +8,11 @@ export const routes: Routes = [
     canMatch: [NotAuthenticatedGuard],
   },
   {
+    path: 'admin',
+    loadChildren: () =>
+      import('./teslo-shop/admin-dashboard/admin-dashboard.routes'),
+  },
+  {
     path: '',
     loadChildren: () =>
       import('./teslo-shop/store-frontend/store-front.routes'),
