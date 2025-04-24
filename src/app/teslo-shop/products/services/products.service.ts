@@ -22,7 +22,7 @@ export class ProductsService {
   getProducts(options: Options): Observable<ProductsResponse> {
     const { limit = 9, offset = 0, gender = '' } = options;
 
-    console.log(this.#productsCache.entries());
+    // console.log(this.#productsCache.entries());
 
     const key = `${limit}-${offset}-${gender}`;
     if (this.#productsCache.has(key)) {

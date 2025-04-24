@@ -1,8 +1,8 @@
 import { Component, inject, signal } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
-import { AlertComponent } from '../../../shared/components/alert/alert.component';
 import { AuthService } from '@auth/services/auth.service';
+import { AlertComponent } from '@shared/components/alert/alert.component';
 
 @Component({
   selector: 'app-login-page',
