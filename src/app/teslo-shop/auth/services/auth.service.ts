@@ -29,8 +29,15 @@ export class AuthService {
     return 'not-authenticated';
   });
 
+  /**
+   * ! Computed signals (user, token, isAdmin). Deriva su valor de otras señales
+   * * user --> Es una signal
+   * * token --> Es una signal
+   * * isAdmin --> Es una signal
+   */
   user = computed<User | null>(() => this.#user());
   token = computed(this.#token);
+  isAdmin = computed(() => this.#user()?.roles.includes('admin') ?? false);
 
   login(email: string, password: string): Observable<boolean> {
     return this.#http

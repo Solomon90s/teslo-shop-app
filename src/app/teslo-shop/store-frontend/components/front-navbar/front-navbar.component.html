@@ -81,16 +81,16 @@
     </ul>
   </div>
   <div class="navbar-end gap-4">
-    @if (Service.authStatus() === 'authenticated') {
+    @if (service.authStatus() === 'authenticated') {
     <button class="btn btn-ghost">
-      {{ Service.user()?.fullName }}
+      {{ service.user()?.fullName }}
     </button>
-    <button (click)="Service.logout()" class="btn btn-sm btn-error">
+    <button (click)="service.logout()" class="btn btn-sm btn-error">
       Salir
     </button>
     }
     <!---->
-    @else if (Service.authStatus() === 'not-authenticated') {
+    @else if (service.authStatus() === 'not-authenticated') {
     <a class="btn text-blue-400" routerLink="/auth/login">Login</a>
     }
     <!---->
