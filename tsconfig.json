@@ -10,6 +10,7 @@
       "@products/*": ["./src/app/teslo-shop/products/*"],
       "@shared/*": ["./src/app/teslo-shop/shared/*"],
       "@store-front/*": ["./src/app/teslo-shop/store-front/*"],
+      "@utils/*": ["./src/app/utils/*"],
     },
     "outDir": "./dist/out-tsc",
     "strict": true,

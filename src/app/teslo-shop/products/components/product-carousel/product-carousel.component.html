@@ -12,8 +12,17 @@
         loading="lazy"
       />
     </div>
-    }@empty {
-    <h1 class="text-2xl">No hay imÃ¡genes</h1>
+    }
+    <!---->
+    @empty {
+    <div class="swiper-slide">
+      <img
+        class="w-full object-cover animate-fadeIn rounded-b-sm"
+        [src]="null | productImage"
+        alt="Producto"
+        loading="lazy"
+      />
+    </div>
     }
   </div>
   <!-- If we need pagination -->

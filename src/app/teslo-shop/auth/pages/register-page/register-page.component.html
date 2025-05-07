@@ -67,7 +67,9 @@
     />
   </label>
 
-  <button class="btn btn-info" type="submit">Register</button>
+  <button class="btn btn-info" [disabled]="!registerForm.valid" type="submit">
+    Register
+  </button>
   <p class="text-slate-100">¿Ya tienes cuenta?</p>
   <a class="text-info" routerLink="/auth/login">Inicia sesión aquí</a>
 </form>

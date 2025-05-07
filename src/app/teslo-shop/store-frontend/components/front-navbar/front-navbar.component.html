@@ -81,6 +81,14 @@
     </ul>
   </div>
   <div class="navbar-end gap-4">
+    @if (service.isAdmin()) {
+    <a routerLink="/admin" class="btn text-accent">Admin Panel</a>
+    }
+    <!---->
+    @else {
+    {{ service.user()?.roles }}
+    }
+    <!---->
     @if (service.authStatus() === 'authenticated') {
     <button class="btn btn-ghost">
       {{ service.user()?.fullName }}

@@ -47,7 +47,9 @@
       placeholder="Contraseña"
     />
   </label>
-  <button class="btn btn-info" type="submit">Login</button>
+  <button class="btn btn-info" [disabled]="!loginForm.valid" type="submit">
+    Login
+  </button>
   <p class="text-slate-100">¿No tienes cuenta?</p>
   <a class="text-info" routerLink="/auth/register">Crea una aquí</a>
 </form>

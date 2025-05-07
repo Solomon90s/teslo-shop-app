@@ -48,6 +48,6 @@ export class ProductCarouselComponent implements AfterViewInit {
         el: '.swiper-scrollbar',
       },
     });
-    console.log({ element });
+    // console.log({ element });
   }
 }
