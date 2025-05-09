@@ -10,6 +10,10 @@ import { FrontFooterComponent } from '../../components/front-footer/front-footer
 })
 export class StoreFrontLayoutComponent {
   scrollToUp() {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      behavior: 'smooth',
+      left: 0,
+      top: document.body.scrollTop,
+    });
   }
 }

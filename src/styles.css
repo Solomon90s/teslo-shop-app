@@ -18,7 +18,7 @@
 @layer base {
   @font-face {
     font-family: "Montserrat";
-    src: url("../public/assets/fonts/monserrat-medium/Montserrat-Medium.ttf")
-      format("truetype");
+    src: url("../public/assets/fonts/monserrat-medium/Montserrat-Medium.woff2")
+      format("woff2");
   }
 }
