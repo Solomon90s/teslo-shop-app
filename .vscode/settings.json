@@ -1,17 +1,17 @@
 {
-    "angular-schematics.schematicsDefaultOptions": {
-        "angular-component": {
-            "skipChangeDetectionOnPush": true
-        },
-        "angular-*": {
-            "externalTemplate": true,
-            "skipStyle": true
-        },
-        "angular-page": {
-            "skipChangeDetectionOnPush": true
-        }
+  "angular-schematics.schematicsDefaultOptions": {
+    "angular-component": {
+      "skipChangeDetectionOnPush": true
     },
-    "files.associations": {
-      "*.css":"tailwindcss"
+    "angular-*": {
+      "externalTemplate": true,
+      "skipStyle": true
+    },
+    "angular-page": {
+      "skipChangeDetectionOnPush": true
     }
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
 }

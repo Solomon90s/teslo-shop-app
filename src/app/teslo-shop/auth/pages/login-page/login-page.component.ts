@@ -3,10 +3,16 @@ import { Router, RouterLink } from '@angular/router';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { AuthService } from '@auth/services/auth.service';
 import { AlertComponent } from '@shared/components/alert/alert.component';
+import { ButtonHomeComponent } from '@auth/components/button-home/button-home.component';
 
 @Component({
   selector: 'app-login-page',
-  imports: [RouterLink, ReactiveFormsModule, AlertComponent],
+  imports: [
+    RouterLink,
+    ReactiveFormsModule,
+    AlertComponent,
+    ButtonHomeComponent,
+  ],
   templateUrl: './login-page.component.html',
   styleUrl: './login-page.component.css',
 })

@@ -2,10 +2,14 @@
   class="footer sm:footer-horizontal flex justify-center bg-neutral text-neutral-content items-center p-4"
 >
   <aside class="grid-flow-col items-center">
-    <p>Copyright &#169; {{ date() }} - Desarrollado con ❤</p>
+    <p>
+      Copyright &#169; {{ date() }} - Desarrollado con
+      <span class="text-red-600">❤</span>
+    </p>
   </aside>
   <nav class="grid-flow-col gap-2 md:place-self-center md:justify-self-end">
     <a
+      aria-label="Perfil personal de github"
       class="hover:scale-125 duration-650"
       href="https://github.com/Solomon90s"
       target="_blank"

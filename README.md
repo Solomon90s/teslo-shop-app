@@ -2,6 +2,10 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.7.
 
+## Demo
+
+![TesloShop App!](/docs/tesloshop.gif)
+
 ## Development server
 
 To start a local development server, run:
