@@ -1,5 +1,10 @@
 import { Component, computed, inject } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import {
+  Router,
+  RouterLink,
+  RouterLinkActive,
+  RouterOutlet,
+} from '@angular/router';
 import { AuthService } from '@auth/services/auth.service';
 
 @Component({
@@ -10,8 +15,10 @@ import { AuthService } from '@auth/services/auth.service';
 export class AdminDashboardLayoutComponent {
   #authService = inject(AuthService);
   user = computed(() => this.#authService.user());
+  router = inject(Router);
 
   get authService(): AuthService {
+    this.router.navigate(['/']);
     return this.#authService;
   }
 }

@@ -1,12 +1,18 @@
 import { Component, inject, signal } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
+import { ButtonHomeComponent } from '@auth/components/button-home/button-home.component';
 import { AuthService } from '@auth/services/auth.service';
 import { AlertComponent } from '@shared/components/alert/alert.component';
 
 @Component({
   selector: 'app-register-page',
-  imports: [AlertComponent, ReactiveFormsModule, RouterLink],
+  imports: [
+    AlertComponent,
+    ReactiveFormsModule,
+    RouterLink,
+    ButtonHomeComponent,
+  ],
   templateUrl: './register-page.component.html',
   styleUrl: './register-page.component.css',
 })

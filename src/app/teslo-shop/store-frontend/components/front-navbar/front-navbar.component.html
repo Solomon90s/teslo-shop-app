@@ -1,7 +1,12 @@
 <div class="navbar bg-neutral shadow-sm">
   <div class="navbar-start">
     <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+      <div
+        aria-label="menu"
+        tabindex="0"
+        role="button"
+        class="btn btn-ghost lg:hidden"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-5 w-5"
@@ -49,7 +54,10 @@
     </div>
     <a routerLink="/" class="btn btn-ghost text-xl font-montserrat">
       Teslo
-      <span class="text-blue-400">| Shop</span></a
+      <span
+        class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent"
+        >| Shop</span
+      ></a
     >
   </div>
   <div class="navbar-center hidden lg:flex">
